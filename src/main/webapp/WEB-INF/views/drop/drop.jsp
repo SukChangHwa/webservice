@@ -1,11 +1,4 @@
-  <div id="editor">
-    <div id="dragme" draggable="true">
-      Drag &amp; Drop me inside the editor
-    </div>
-    <div id='edit' style="margin-top: 30px;">
-      <h1>Drop Event</h1>
-      <p>Drag &amp; Drop the box above into the editable area to see the <a
-          href="https://www.froala.com/wysiwyg-editor/docs/events#drop" title="Drop Event">drop</a> event being
-        triggered. Don't forget to open the browser console to follow the event.</p>
-    </div>
-  </div>
+<div id="drag-smile" style="border: solid 1px #CCC; padding: 5px; width: 300px;" draggable="true"><img src="https://cdnjs.cloudflare.com/ajax/libs/emojione/2.0.1/assets/svg/1f600.svg" width="32"/> Drag Me to insert a smile.</div><br/>
+<div id="drag-text" style="border: solid 1px #CCC; padding: 5px; width: 300px;" draggable="true">Drag Me to insert some text.</div><br/>
+<div id="froala-editor">
+</div>
