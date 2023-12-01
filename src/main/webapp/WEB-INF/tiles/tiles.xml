@@ -3,19 +3,39 @@
   "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
  
 <tiles-definitions>
-	<!-- 화면의 기초가 되는 left menu base -->
+	<!-- default -->
 	<definition name="default" template="/WEB-INF/tiles/layout/default-template.jsp">
 		<put-attribute name="left"   value="/WEB-INF/tiles/layout/default/left.jsp" />
 		<put-attribute name="topbar" value="/WEB-INF/tiles/layout/default/topbar.jsp" />
 		<put-attribute name="modal" value="/WEB-INF/tiles/layout/default/modal.jsp" />
 		<put-attribute name="footer" value="/WEB-INF/tiles/layout/default/footer.jsp" />
-		
 	</definition>
-
 	<definition name="*" extends="default">
 		<put-attribute name="body" value="/WEB-INF/views/{1}/{1}.jsp" />
 		<put-attribute name="customJs" value="/WEB-INF/views/{1}/{1}-js.jsp" />
 	</definition>
 
 
+	<!-- pilot -->
+	<definition name="pilot" template="/WEB-INF/tiles/layout/pilot-template.jsp">
+		<put-attribute name="left"   value="/WEB-INF/tiles/layout/pilot/left.jsp" />
+		<put-attribute name="topbar" value="/WEB-INF/tiles/layout/pilot/topbar.jsp" />
+		<put-attribute name="modal" value="/WEB-INF/tiles/layout/pilot/modal.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/tiles/layout/pilot/footer.jsp" />
+	</definition>
+	<definition name="pilot/*" extends="pilot">
+		<put-attribute name="body" value="/WEB-INF/views/{1}/{1}.jsp" />
+		<put-attribute name="customJs" value="/WEB-INF/views/{1}/{1}-js.jsp" />
+	</definition>
+	<!-- vue3 -->
+	<definition name="vue3" template="/WEB-INF/tiles/layout/vue3-template.jsp">
+		<put-attribute name="left"   value="/WEB-INF/tiles/layout/vue3/left.jsp" />
+		<put-attribute name="topbar" value="/WEB-INF/tiles/layout/vue3/topbar.jsp" />
+		<put-attribute name="modal" value="/WEB-INF/tiles/layout/vue3/modal.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/tiles/layout/vue3/footer.jsp" />
+	</definition>
+	<definition name="vue3/*" extends="vue3">
+		<put-attribute name="body" value="/WEB-INF/views/{1}/{1}.jsp" />
+		<put-attribute name="customJs" value="/WEB-INF/views/{1}/{1}-js.jsp" />
+	</definition>
 </tiles-definitions>
