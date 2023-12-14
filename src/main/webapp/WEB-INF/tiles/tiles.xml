@@ -27,4 +27,15 @@
 		<put-attribute name="body" value="/WEB-INF/views/{1}/{1}.jsp" />
 		<put-attribute name="customJs" value="/WEB-INF/views/{1}/{1}-js.jsp" />
 	</definition>
+	<!-- vue3 -->
+	<definition name="vue3" template="/WEB-INF/tiles/layout/vue3-template.jsp">
+		<put-attribute name="left"   value="/WEB-INF/tiles/layout/vue3/left.jsp" />
+		<put-attribute name="topbar" value="/WEB-INF/tiles/layout/vue3/topbar.jsp" />
+		<put-attribute name="modal" value="/WEB-INF/tiles/layout/vue3/modal.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/tiles/layout/vue3/footer.jsp" />
+	</definition>
+	<definition name="vue3/*" extends="vue3">
+		<put-attribute name="body" value="/WEB-INF/views/{1}/{1}.jsp" />
+		<put-attribute name="customJs" value="/WEB-INF/views/{1}/{1}-js.jsp" />
+	</definition>
 </tiles-definitions>
