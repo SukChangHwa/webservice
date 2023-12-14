@@ -28,9 +28,7 @@ var app = createApp({
     }
   }
 });
-
 app.component('ckeditor', CKEditor.component);
 app.component('left-vue', LeftVue);
 app.mount('#appVue');
-
 </script>
